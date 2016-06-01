@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/svenfuchs/rails-i18n.git
+  revision: 129b9fb8e881ffbf1abe93a04bbbef894a3aa257
+  branch: rails-4-x
+  specs:
+    rails-i18n (4.0.8)
+      i18n (~> 0.7)
+      railties (~> 4.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -63,6 +72,7 @@ GEM
       railties (>= 3.0.0)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
+    high_voltage (2.4.0)
     i18n (0.7.0)
     jbuilder (2.5.0)
       activesupport (>= 3.0.0, < 5.1)
@@ -195,10 +205,12 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   dotenv-rails
   factory_girl_rails
+  high_voltage (~> 2.4.0)
   jbuilder (~> 2.0)
   jquery-rails
   pg (~> 0.15)
   rails (= 4.2.6)
+  rails-i18n!
   rails_12factor
   rspec-rails (~> 3.0)
   sass-rails (~> 5.0)

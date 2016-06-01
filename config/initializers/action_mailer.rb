@@ -1,0 +1,8 @@
+case Rails.env
+when "development", "test"
+  Rails.application.configure do
+    config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  end
+else
+  # Production configs
+end
