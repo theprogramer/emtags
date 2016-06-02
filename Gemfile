@@ -1,4 +1,4 @@
-ruby '2.3.0'
+ruby '2.2.4'
 
 source 'https://rubygems.org'
 
@@ -48,6 +48,12 @@ gem 'high_voltage', '~> 2.4.0'
 
 # Translations I18n
 gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'rails-4-x' # For 4.x
+
+# Use Bourbon
+gem 'bourbon', github: 'thoughtbot/bourbon', branch: 'v5.0.0.beta.5'
+
+# Use Neat
+gem 'neat'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
