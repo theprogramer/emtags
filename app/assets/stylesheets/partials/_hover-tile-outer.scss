@@ -13,9 +13,22 @@
   cursor: pointer;
   height: $hover-tile-height;
   margin-bottom: $base-line-height;
+  max-width: 400px;
 
   @include media($medium-screen) {
     @include span-columns(4);
+  }
+
+  &.build {
+    background: image-url("actions/build.png");
+  }
+
+  &.migrate {
+    background: image-url("actions/migrate.png"); 
+  }
+
+  &.startup {
+    background: image-url("actions/startup.png"); 
   }
 
   .hover-tile-container {
