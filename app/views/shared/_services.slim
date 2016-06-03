@@ -1,23 +1,26 @@
 section
-  h1 Sem enrolação. Confiança e rapidez.
-  h2 Simplificamos a criação de sites pra você economizar tempo e dinheiro.
-  h3 Conheça nossos serviços
+  .title-section
+    h2
+      = t(".title")
+      span class="underline"
+        span
+    p= t(".text")
   ul.bullets
     li.bullet
       .bullet-icon.bullet-icon-1
         img alt="" src="https://raw.githubusercontent.com/thoughtbot/refills/49db8c0f2f8066c2c3a275781503fe3303a1a9fc/source/images/placeholder.png" /
       .bullet-content
-        h2 This Bullet Title
-        p Lorem dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.
+        h2= t(".development.title")
+        p= t(".development.text")
     li.bullet
       .bullet-icon.bullet-icon-2
         img alt="" src="https://raw.githubusercontent.com/thoughtbot/refills/49db8c0f2f8066c2c3a275781503fe3303a1a9fc/source/images/placeholder.png" /
       .bullet-content
-        h2 Another Bullet Title
-        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum.
+        h2= t(".update.title")
+        p= t(".update.text")
     li.bullet
       .bullet-icon.bullet-icon-3
         img alt="" src="https://raw.githubusercontent.com/thoughtbot/refills/49db8c0f2f8066c2c3a275781503fe3303a1a9fc/source/images/placeholder.png" /
       .bullet-content
-        h2 Last Bullet Title
-        p Lorem ipsum sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.
+        h2= t(".planning.title")
+        p= t(".plannig.text")

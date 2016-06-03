@@ -1,0 +1,29 @@
+---
+pt-BR:
+  shared:
+    actions:
+      title: Junte-se a milhares de empresas que utilizam nossa agência web
+      build:  &build
+        title: Precisa de um site novo?
+        text:
+      migrate: &migrate
+        title: Precisa reformar seu site?
+        text:
+      startup: &startup
+        title: Precisa criar uma Startup?
+        text:
+    customers:
+      title: Nossos clientes
+      text: Confira quem já é nosso cliente
+    join:
+      title: Junte-se! 
+      text: Faça parte de nosso portfolio
+      build:
+        <<: *build
+      migrate:
+        <<: *migrate
+      startup:
+        <<: *startup
+    services:
+      title: O que fazemos
+      text: Simplificamos a criação de sites pra você economizar tempo e dinheiro.

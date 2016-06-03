@@ -1,20 +1,25 @@
 section
-  h1 Faça parte de nosso portifolio
-  .hover-tile-outer
+  .title-section
+    h2
+      = t(".title")
+      span class="underline"
+        span
+    p= t(".text")
+  .hover-tile-outer.build
     .hover-tile-container
       .hover-tile.hover-tile-visible
       .hover-tile.hover-tile-hidden
-        h4 Hidden Copy
-        p Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.
-  .hover-tile-outer
+        h4= t(".build.title")
+        p= t(".build.text")
+  .hover-tile-outer.migrate
     .hover-tile-container
       .hover-tile.hover-tile-visible
       .hover-tile.hover-tile-hidden
-        h4 Hidden Copy
-        p Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.
-  .hover-tile-outer
+        h4= t(".migrate.title")
+        p= t(".migrate.text")
+  .hover-tile-outer.startup
     .hover-tile-container
       .hover-tile.hover-tile-visible
       .hover-tile.hover-tile-hidden
-        h4 Hidden Copy
-        p Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.
+        h4= t(".startup.title")
+        p= t(".startup.text")

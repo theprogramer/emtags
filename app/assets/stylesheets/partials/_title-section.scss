@@ -1,0 +1,35 @@
+
+.title-section {
+  text-align: center;
+  padding-top: 13px;
+  padding-bottom: 65px;
+  position: relative;
+
+  h2 {
+  	    position: relative;
+    color: #FE3434;
+    margin: auto;
+    width: 400px;
+    border-bottom: 2px solid #C9C9C9;
+    padding-bottom: 17px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    .underline {
+      opacity: 1;
+      bottom: -3px;
+      width: 100%;
+      left: 0;
+      position: absolute;
+      span {
+      	width: 91px;
+        height: 4px;
+        display: block;
+        background: #FE3434;
+        margin: auto;
+      }
+    }
+  }
+}
