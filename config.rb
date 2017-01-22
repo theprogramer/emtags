@@ -36,6 +36,11 @@ if defined? RailsAssets
   end
 end
 
+activate :blog do |blog|
+  blog.name = 'blog'
+  blog.prefix = 'blog'
+end
+
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload

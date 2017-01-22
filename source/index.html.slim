@@ -1,58 +1,9 @@
 ---
 title: Bem vindo a Emtags!
+pageClass: ['page_classes']
 ---
 
-.oi_head_holder
-  .container
-    .row
-      .col-md-3.col-sm-3.io_xs
-        a href="index.html"
-          == image_tag "buran-logo.png", alt: "Emtags"
-      .col-md-9.col-sm-9.io_xs
-        i.fa.fa-bars.fa-2x.visible-xs.oi_xs_menu
-        nav.menu-general-menu-container
-          ul#menu-general-menu.oi_header_menu
-            li.current-menu-item
-              a href="index.html"  Home
-              ul.sub-menu
-                li.current-menu-item
-                  a href="index.html"  Agency
-                li
-                  a href="agency.html"  Agency 2
-                li
-                  a href="agency-3.html"  Agency 3
-            li
-              a href="about.html"  About
-            li
-              a href="blog.html"  Blog
-            li
-              a href="#"  Portfolio
-              ul.sub-menu
-                li
-                  a href="portfolio-square-thumbs.html"  Square Thumbs
-                li
-                  a href="portfolio-square-thumb-spaces.html"  Square Thumbs + Spaces
-                li
-                  a href="portfolio-random-thumbs.html"  Random Thumbs
-                li
-                  a href="portfolio-random-thumbs-spaces.html"  Random Thumbs + Spaces
-                li
-                  a ———
-                li
-                  a href="lamobile.html"  Single Example 1
-                li
-                  a href="good-co-coffee.html"  Single Example 2
-                li
-                  a href="anker.html"  Single Example 3
-                li
-                  a href="flight-to-the-flats.html"  Single Example 4
-                li
-                  a href="suez-environnement.html"  Single Example 5
-            li
-              a href="contacts.html"  Contacts
-            li
-              a href="http://themeforest.net/item/buran-smart-portfolio-and-business-html-template/10467159?ref=FoxSash"  Purchase
-.clearfix
+= partial "shared/navigation"
 .this_page
   .container
     /!
@@ -69,10 +20,13 @@ title: Bem vindo a Emtags!
           .col-sm-8
             .oi_vc_text.oi_x2
               .oi_vc_text_span
-                h3.oi_legend Brand new agency.
-                | Over
-                span.colored 40,000
-                | customers use our themes to power their websites and we love them.
+                h3.oi_legend Você pode confiar!
+                | Há cada
+                span.colored &nbsp;novo projeto&nbsp;
+                | mais um
+                span.colored &nbsp;cliente satisfeito&nbsp;
+                | e mais um
+                span.colored &nbsp;projeto concluído.
           .col-sm-4
             .oi_vc_potrfolio.oi_x1.lamobile
               a.oi_vc_port_mask.bg_ff6633 href="lamobile.html" 
@@ -83,13 +37,13 @@ title: Bem vindo a Emtags!
             .oi_vc_text.oi_link_block.text-center.oi_x1
               .oi_vc_text_span
                 h3.oi_sub_legend
-                  a href="http://www.google.com"  ABOUT
+                  a href="http://www.google.com"  QUEM SOMOS?
     /!
     /!
     .row.row-fluid.full_row
       .col-sm-4.wpb_column.vc_column_container.vc_custom_block
         .oi_vc_text.oi_x1
-          .oi_vc_text_span We bring a crafted and inspired approach to every project we work on, which is why our clients love us and why they keep coming back.
+          .oi_vc_text_span Trazemos uma abordagem inspirada para cada projeto em que trabalhamos, razão pela qual nossos clientes nos amam e por que eles continuam voltando.
       .col-sm-8
         .row.row-fluid.full_row
           .col-sm-4
@@ -103,7 +57,7 @@ title: Bem vindo a Emtags!
             .oi_vc_text.oi_link_block.text-center.oi_x1
               .oi_vc_text_span
                 h3.oi_sub_legend
-                  a href="http://www.google.com"  SERVICESS
+                  a href="http://www.google.com"  O QUE FAZEMOS?
           .col-sm-4.bg_fff
             .oi_vc_potrfolio.oi_x1.good-co-coffee
               a.oi_vc_port_mask.bg_ebc483 href="good-co-coffee.html" 
@@ -124,21 +78,11 @@ title: Bem vindo a Emtags!
         .oi_vc_text.oi_link_block.text-center.oi_x1
           #blog_snipet_slider.oi_vc_text_span
             ul.slides
-              li
-                .oi_vc_post
-                  .vc_latest_news_date Jan 15, 2015
-                  h3.oi_sub_legend
-                    a href="donec-acultrices-urna.html"  Donec Acultrices Urna
-              li
-                .oi_vc_post
-                  .vc_latest_news_date Jan 26, 2015
-                  h3.oi_sub_legend
-                    a href="video-post-youtube.html"  Video Post : YouTube
-              li
-                .oi_vc_post
-                  .vc_latest_news_date Jan 26, 2015
-                  h3.oi_sub_legend
-                    a href="video-post-vimeo.html"  Video Post : Vimeo
+              - blog('blog').articles[0...3].each do |article|
+                li
+                  .oi_vc_post
+                    .vc_latest_news_date= article.date.strftime('%d/%m/%Y')
+                    h3.oi_sub_legend= link_to article.title, article.url
       .col-sm-8
         .row.row-fluid.full_row
           .col-sm-8
@@ -229,7 +173,7 @@ title: Bem vindo a Emtags!
             .oi_vc_text.oi_link_block.text-center.oi_x1
               .oi_vc_text_span
                 h3.oi_sub_legend
-                  a href="contacts.html"  CONTACTS
+                  a href="contacts.html"  FALE COM AGENTE!
           .col-sm-8
             .oi_vc_potrfolio.oi_x1.flight-to-the-flats
               a.oi_vc_port_mask.bg_cdbf90 href="flight-to-the-flats.html" 
@@ -238,13 +182,5 @@ title: Bem vindo a Emtags!
                   .oi_vc_port_cat.text_000 Presentaion
                   .oi_vc_sep.bg_000
     /!
-/! Footer
-.container
-  .oi_footer
-    .row
-      .col-md-12
-        | Copyright © 2015. Design by
-        = succeed "." do
-          a href="http://themeforest.net/user/OrangeIdea/portfolio?ref=FoxSash" target="_blank"  OrangeIdea
-        a href="http://themeforest.net/user/FoxSash/portfolio?ref=FoxSash" target="_blank"  FoxSash
+= partial 'shared/footer'
 

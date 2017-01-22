@@ -1,0 +1,21 @@
+.oi_head_holder
+  .container
+    .row
+      .col-md-3.col-sm-3.io_xs
+        = link_to '/', alt: '' do
+          = image_tag "buran-logo.png", alt: "Emtags"
+      .col-md-9.col-sm-9.io_xs
+        i.fa.fa-bars.fa-2x.visible-xs.oi_xs_menu
+        nav.menu-general-menu-container
+          ul#menu-general-menu.oi_header_menu
+            li.current-menu-item
+              = link_to "Home", "/"
+            li
+              a href="about.html"  Sobre
+            li
+              a href="blog.html"  Blog
+            li
+              a href="#"  Portfolio
+            li
+              a href="contacts.html"  Contato
+.clearfix

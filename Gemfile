@@ -24,6 +24,8 @@ gem 'middleman-search_engine_sitemap'
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
 
+gem "middleman-blog", "~> 4.0"
+
 source 'https://rails-assets.org' do
   gem 'rails-assets-jquery'
 end
