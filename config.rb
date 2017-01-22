@@ -2,6 +2,11 @@
 # Page options, layouts, aliases and proxies
 ###
 
+require 'slim'
+require 'lib/image_helpers'
+
+helpers ImageHelpers
+
 # Per-page layout changes:
 #
 # With no layout
@@ -17,6 +22,19 @@ page '/*.txt', layout: false
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
 # General configuration
+
+set :url_root, 'http://emtags.com.br'
+
+activate :sprockets
+activate :asset_hash
+# activate :middleman_simple_thumbnailer
+activate :search_engine_sitemap
+
+if defined? RailsAssets
+  RailsAssets.load_paths.each do |path|
+    sprockets.append_path path
+  end
+end
 
 # Reload the browser automatically whenever files change
 configure :development do
@@ -37,8 +55,8 @@ end
 # Build-specific configuration
 configure :build do
   # Minify CSS on build
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 end
