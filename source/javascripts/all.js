@@ -8,4 +8,4 @@
 //= require jquery.flexslider-min.js
 //= require imagesloaded.js
 //= require gmap3.min.js
-//= custom.js
+//= require custom.js
